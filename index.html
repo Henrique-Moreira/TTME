@@ -12,13 +12,15 @@
 <body>
     <div class="geral">
         <form>
-            <div class="cronometro">
-                <b><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></b>
+            <div id="caixaCronometro">
+                <b id="cronometro"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></b>
             </div>
+            <div class="buttons">
 
-            <input type="button" value="Iniciar" onclick='start()'>
-            <input type="button" value="Pausar" onclick='pause()'>
-            <input type="button" value="Reiniciar" onclick='reseta()'>
+                <input type="button" value="Iniciar" onclick='start()'>
+                <input type="button" value="Pausar" onclick='pause()'>
+                <input type="button" value="Reiniciar" onclick='reseta()'>
+            </div>
         </form>
     </div>
     <audio id="seg30" src="sounds/30seg.mp3"></audio>

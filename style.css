@@ -1,9 +1,42 @@
 * {
     text-align: center;
-    font-family: sans-serif;
+    font-family: Arial;
+}
+
+#cronometro {
+    background-color: white;
+    font-size: 55px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.caixaCronometro {
+    margin: 50px;
+}
+
+.buttons {
+    margin-top: 30px;
 }
 
 .geral {
-    /* width: 50%; */
-    /* background-color: red; */
+    padding: 50px;
+    width: 69%;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid black;
 }
+
+input[type=button] {
+    background-color: #416161;
+    color: white;
+    padding: 15px 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+  }
