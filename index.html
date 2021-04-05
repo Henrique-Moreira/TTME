@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,24 @@
     <title>TTME</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form>
-        <div class="geral">
+    <div class="geral">
+        <form>
             <div class="cronometro">
                 <b><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></b>
             </div>
-          
-          <input type="button" value="Iniciar" onclick='start()'>
-          <input type="button" value="Pausar" onclick='pause()'>
-          <input type="button" value="Reiniciar" onclick='reseta()'>
+
+            <input type="button" value="Iniciar" onclick='start()'>
+            <input type="button" value="Pausar" onclick='pause()'>
+            <input type="button" value="Reiniciar" onclick='reseta()'>
         </form>
     </div>
+    <audio id="seg30" src="sounds/30seg.mp3"></audio>
+    <audio id="min1seg30" src="sounds/1min30s.mp3"></audio>
+    <audio id="min2seg40" src="sounds/2min40s.mp3"></audio>
+    <audio id="reiniciando" src="sounds/reiniciando.mp3"></audio>
     <script src="script.js"></script>
 </body>
+
 </html>

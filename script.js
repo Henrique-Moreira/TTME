@@ -7,7 +7,7 @@ let cron;
 
 function start() {
     pause();
-    cron = setInterval(() => { timer(); }, 10);
+    cron = setInterval(() => { timer(); }, 10)
 }
 
 function pause() {
@@ -23,6 +23,8 @@ function reseta() {
     document.getElementById('minute').innerText = '00';
     document.getElementById('second').innerText = '00';
     document.body.style.background = 'white';
+    document.getElementById("reiniciando").play();
+    document.getElementById("reiniciando").play();
 }
 
 function timer() {
@@ -41,12 +43,15 @@ function timer() {
     // Regras para prova
     if(minute == 0 && second == 30) {
         document.body.style.background = '#00ff00';
+        document.getElementById("seg30").play();
     }
     if(minute == 1 && second == 30) {
         document.body.style.background = '#ffff00';
+        document.getElementById("min1seg30").play();
     }
     if(minute == 2 && second == 40) {
         document.body.style.background = '#ff0000';
+        document.getElementById("min2seg40").play();
     }
     if(minute == 2 && second == 50) {
         document.body.style.background = 'white';
